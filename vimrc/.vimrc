@@ -6,11 +6,12 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -18,12 +19,28 @@ Plugin 'gmarik/Vundle.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" settings
+" ==== SETTINGS ===
 set splitbelow
 set splitright
-"split navigations
+set encoding=utf-8
+
+" view
+syntax on 
+set number
+
+" indentation
+set tabstop=4
+
+" enable folding
+set foldmethod=indent
+set foldlevel=99
+
+" ==== Key Mapping ===
+" split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" folding shortcut
+nnoremap <space> za
 
