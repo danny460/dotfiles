@@ -10,8 +10,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -19,12 +21,15 @@ Plugin 'scrooloose/syntastic'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" ==== Plugin Settings ==
+" nerdtree
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " ==== SETTINGS ===
 set splitbelow
 set splitright
 set encoding=utf-8
-
-" view
 syntax on 
 set number
 
@@ -43,4 +48,5 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " folding shortcut
 nnoremap <space> za
+
 
