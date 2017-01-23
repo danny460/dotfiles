@@ -14,6 +14,7 @@ Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tomasr/molokai'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -30,7 +31,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 set splitbelow
 set splitright
 set encoding=utf-8
-syntax on 
+syntax enable 
 set number
 
 " indentation
