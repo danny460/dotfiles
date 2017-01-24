@@ -16,7 +16,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'vim-airline/vim-airline'
+Plugin 'thinca/vim-quickrun'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
+
 
 
 " All of your Plugins must be added before the following line
