@@ -14,7 +14,8 @@ Plugin 'valloric/youcompleteme'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'vim-airline/vim-airline'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 
 
@@ -33,7 +34,8 @@ set splitright
 set encoding=utf-8
 syntax enable 
 set number
-
+set background=dark
+colorscheme gruvbox
 " indentation
 set tabstop=4
 
